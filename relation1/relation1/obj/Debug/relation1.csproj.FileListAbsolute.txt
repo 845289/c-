@@ -1,0 +1,7 @@
+D:\project\c#\relation1\relation1\bin\Debug\relation1.exe.config
+D:\project\c#\relation1\relation1\bin\Debug\relation1.exe
+D:\project\c#\relation1\relation1\bin\Debug\relation1.pdb
+D:\project\c#\relation1\relation1\obj\Debug\relation1.csprojResolveAssemblyReference.cache
+D:\project\c#\relation1\relation1\obj\Debug\relation1.csproj.CoreCompileInputs.cache
+D:\project\c#\relation1\relation1\obj\Debug\relation1.exe
+D:\project\c#\relation1\relation1\obj\Debug\relation1.pdb

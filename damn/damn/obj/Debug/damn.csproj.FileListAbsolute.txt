@@ -1,0 +1,9 @@
+D:\project\c#\damn\damn\bin\Debug\damn.exe.config
+D:\project\c#\damn\damn\bin\Debug\damn.exe
+D:\project\c#\damn\damn\bin\Debug\damn.pdb
+D:\project\c#\damn\damn\bin\Debug\PatternPrint.dll
+D:\project\c#\damn\damn\bin\Debug\PatternPrint.pdb
+D:\project\c#\damn\damn\obj\Debug\damn.csprojResolveAssemblyReference.cache
+D:\project\c#\damn\damn\obj\Debug\damn.csproj.CoreCompileInputs.cache
+D:\project\c#\damn\damn\obj\Debug\damn.exe
+D:\project\c#\damn\damn\obj\Debug\damn.pdb

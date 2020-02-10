@@ -1,0 +1,7 @@
+D:\project\c#\not\not\bin\Debug\not.exe.config
+D:\project\c#\not\not\bin\Debug\not.exe
+D:\project\c#\not\not\bin\Debug\not.pdb
+D:\project\c#\not\not\obj\Debug\not.csprojResolveAssemblyReference.cache
+D:\project\c#\not\not\obj\Debug\not.csproj.CoreCompileInputs.cache
+D:\project\c#\not\not\obj\Debug\not.exe
+D:\project\c#\not\not\obj\Debug\not.pdb

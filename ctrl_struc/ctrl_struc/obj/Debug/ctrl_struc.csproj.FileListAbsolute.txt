@@ -1,0 +1,7 @@
+D:\project\c#\ctrl_struc\ctrl_struc\bin\Debug\ctrl_struc.exe.config
+D:\project\c#\ctrl_struc\ctrl_struc\bin\Debug\ctrl_struc.exe
+D:\project\c#\ctrl_struc\ctrl_struc\bin\Debug\ctrl_struc.pdb
+D:\project\c#\ctrl_struc\ctrl_struc\obj\Debug\ctrl_struc.csprojResolveAssemblyReference.cache
+D:\project\c#\ctrl_struc\ctrl_struc\obj\Debug\ctrl_struc.csproj.CoreCompileInputs.cache
+D:\project\c#\ctrl_struc\ctrl_struc\obj\Debug\ctrl_struc.exe
+D:\project\c#\ctrl_struc\ctrl_struc\obj\Debug\ctrl_struc.pdb

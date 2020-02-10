@@ -1,0 +1,7 @@
+D:\project\c#\byvalue\byvalue\bin\Debug\byvalue.exe.config
+D:\project\c#\byvalue\byvalue\bin\Debug\byvalue.exe
+D:\project\c#\byvalue\byvalue\bin\Debug\byvalue.pdb
+D:\project\c#\byvalue\byvalue\obj\Debug\byvalue.csprojResolveAssemblyReference.cache
+D:\project\c#\byvalue\byvalue\obj\Debug\byvalue.csproj.CoreCompileInputs.cache
+D:\project\c#\byvalue\byvalue\obj\Debug\byvalue.exe
+D:\project\c#\byvalue\byvalue\obj\Debug\byvalue.pdb

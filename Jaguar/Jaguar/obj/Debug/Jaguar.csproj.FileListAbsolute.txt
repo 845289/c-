@@ -1,0 +1,7 @@
+D:\project\c#\Jaguar\Jaguar\bin\Debug\Jaguar.exe.config
+D:\project\c#\Jaguar\Jaguar\bin\Debug\Jaguar.exe
+D:\project\c#\Jaguar\Jaguar\bin\Debug\Jaguar.pdb
+D:\project\c#\Jaguar\Jaguar\obj\Debug\Jaguar.csprojResolveAssemblyReference.cache
+D:\project\c#\Jaguar\Jaguar\obj\Debug\Jaguar.csproj.CoreCompileInputs.cache
+D:\project\c#\Jaguar\Jaguar\obj\Debug\Jaguar.exe
+D:\project\c#\Jaguar\Jaguar\obj\Debug\Jaguar.pdb

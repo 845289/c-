@@ -1,0 +1,7 @@
+D:\project\c#\dom\dom\bin\Debug\dom.exe.config
+D:\project\c#\dom\dom\bin\Debug\dom.exe
+D:\project\c#\dom\dom\bin\Debug\dom.pdb
+D:\project\c#\dom\dom\obj\Debug\dom.csprojResolveAssemblyReference.cache
+D:\project\c#\dom\dom\obj\Debug\dom.csproj.CoreCompileInputs.cache
+D:\project\c#\dom\dom\obj\Debug\dom.exe
+D:\project\c#\dom\dom\obj\Debug\dom.pdb

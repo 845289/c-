@@ -1,0 +1,7 @@
+D:\project\c#\alea\alea\bin\Debug\alea.exe.config
+D:\project\c#\alea\alea\bin\Debug\alea.exe
+D:\project\c#\alea\alea\bin\Debug\alea.pdb
+D:\project\c#\alea\alea\obj\Debug\alea.csprojResolveAssemblyReference.cache
+D:\project\c#\alea\alea\obj\Debug\alea.csproj.CoreCompileInputs.cache
+D:\project\c#\alea\alea\obj\Debug\alea.exe
+D:\project\c#\alea\alea\obj\Debug\alea.pdb

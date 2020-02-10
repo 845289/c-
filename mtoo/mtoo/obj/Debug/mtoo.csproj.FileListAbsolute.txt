@@ -1,0 +1,7 @@
+D:\project\c#\mtoo\mtoo\bin\Debug\mtoo.exe.config
+D:\project\c#\mtoo\mtoo\bin\Debug\mtoo.exe
+D:\project\c#\mtoo\mtoo\bin\Debug\mtoo.pdb
+D:\project\c#\mtoo\mtoo\obj\Debug\mtoo.csprojResolveAssemblyReference.cache
+D:\project\c#\mtoo\mtoo\obj\Debug\mtoo.csproj.CoreCompileInputs.cache
+D:\project\c#\mtoo\mtoo\obj\Debug\mtoo.exe
+D:\project\c#\mtoo\mtoo\obj\Debug\mtoo.pdb

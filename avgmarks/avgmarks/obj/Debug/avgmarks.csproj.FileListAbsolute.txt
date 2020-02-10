@@ -1,0 +1,7 @@
+D:\project\c#\avgmarks\avgmarks\obj\Debug\avgmarks.csprojResolveAssemblyReference.cache
+D:\project\c#\avgmarks\avgmarks\obj\Debug\avgmarks.csproj.CoreCompileInputs.cache
+D:\project\c#\avgmarks\avgmarks\bin\Debug\avgmarks.exe.config
+D:\project\c#\avgmarks\avgmarks\bin\Debug\avgmarks.exe
+D:\project\c#\avgmarks\avgmarks\bin\Debug\avgmarks.pdb
+D:\project\c#\avgmarks\avgmarks\obj\Debug\avgmarks.exe
+D:\project\c#\avgmarks\avgmarks\obj\Debug\avgmarks.pdb

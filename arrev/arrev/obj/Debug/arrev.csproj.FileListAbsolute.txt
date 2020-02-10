@@ -1,0 +1,7 @@
+D:\project\c#\arrev\arrev\bin\Debug\arrev.exe.config
+D:\project\c#\arrev\arrev\bin\Debug\arrev.exe
+D:\project\c#\arrev\arrev\bin\Debug\arrev.pdb
+D:\project\c#\arrev\arrev\obj\Debug\arrev.csprojResolveAssemblyReference.cache
+D:\project\c#\arrev\arrev\obj\Debug\arrev.csproj.CoreCompileInputs.cache
+D:\project\c#\arrev\arrev\obj\Debug\arrev.exe
+D:\project\c#\arrev\arrev\obj\Debug\arrev.pdb

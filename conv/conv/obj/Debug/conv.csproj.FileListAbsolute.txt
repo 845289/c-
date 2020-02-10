@@ -1,0 +1,7 @@
+D:\project\c#\conv\conv\bin\Debug\conv.exe.config
+D:\project\c#\conv\conv\bin\Debug\conv.exe
+D:\project\c#\conv\conv\bin\Debug\conv.pdb
+D:\project\c#\conv\conv\obj\Debug\conv.csprojResolveAssemblyReference.cache
+D:\project\c#\conv\conv\obj\Debug\conv.csproj.CoreCompileInputs.cache
+D:\project\c#\conv\conv\obj\Debug\conv.exe
+D:\project\c#\conv\conv\obj\Debug\conv.pdb

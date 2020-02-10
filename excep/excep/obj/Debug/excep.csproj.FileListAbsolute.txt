@@ -1,0 +1,7 @@
+D:\project\c#\excep\excep\obj\Debug\excep.csprojResolveAssemblyReference.cache
+D:\project\c#\excep\excep\obj\Debug\excep.csproj.CoreCompileInputs.cache
+D:\project\c#\excep\excep\bin\Debug\excep.exe.config
+D:\project\c#\excep\excep\bin\Debug\excep.exe
+D:\project\c#\excep\excep\bin\Debug\excep.pdb
+D:\project\c#\excep\excep\obj\Debug\excep.exe
+D:\project\c#\excep\excep\obj\Debug\excep.pdb

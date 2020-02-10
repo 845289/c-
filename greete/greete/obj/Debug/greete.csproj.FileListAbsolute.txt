@@ -1,0 +1,7 @@
+D:\project\c#\greete\greete\obj\Debug\greete.csprojResolveAssemblyReference.cache
+D:\project\c#\greete\greete\obj\Debug\greete.csproj.CoreCompileInputs.cache
+D:\project\c#\greete\greete\bin\Debug\greete.exe.config
+D:\project\c#\greete\greete\bin\Debug\greete.exe
+D:\project\c#\greete\greete\bin\Debug\greete.pdb
+D:\project\c#\greete\greete\obj\Debug\greete.exe
+D:\project\c#\greete\greete\obj\Debug\greete.pdb

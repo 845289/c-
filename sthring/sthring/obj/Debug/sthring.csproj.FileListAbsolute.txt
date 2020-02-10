@@ -1,0 +1,7 @@
+D:\project\c#\sthring\sthring\bin\Debug\sthring.exe.config
+D:\project\c#\sthring\sthring\bin\Debug\sthring.exe
+D:\project\c#\sthring\sthring\bin\Debug\sthring.pdb
+D:\project\c#\sthring\sthring\obj\Debug\sthring.csprojResolveAssemblyReference.cache
+D:\project\c#\sthring\sthring\obj\Debug\sthring.csproj.CoreCompileInputs.cache
+D:\project\c#\sthring\sthring\obj\Debug\sthring.exe
+D:\project\c#\sthring\sthring\obj\Debug\sthring.pdb

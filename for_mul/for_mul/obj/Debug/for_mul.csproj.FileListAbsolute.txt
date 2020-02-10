@@ -1,0 +1,7 @@
+D:\project\c#\for_mul\for_mul\bin\Debug\for_mul.exe.config
+D:\project\c#\for_mul\for_mul\bin\Debug\for_mul.exe
+D:\project\c#\for_mul\for_mul\bin\Debug\for_mul.pdb
+D:\project\c#\for_mul\for_mul\obj\Debug\for_mul.csprojResolveAssemblyReference.cache
+D:\project\c#\for_mul\for_mul\obj\Debug\for_mul.csproj.CoreCompileInputs.cache
+D:\project\c#\for_mul\for_mul\obj\Debug\for_mul.exe
+D:\project\c#\for_mul\for_mul\obj\Debug\for_mul.pdb

@@ -1,0 +1,7 @@
+D:\project\c#\nonstat\nonstat\obj\Debug\nonstat.csprojResolveAssemblyReference.cache
+D:\project\c#\nonstat\nonstat\obj\Debug\nonstat.csproj.CoreCompileInputs.cache
+D:\project\c#\nonstat\nonstat\bin\Debug\nonstat.exe.config
+D:\project\c#\nonstat\nonstat\bin\Debug\nonstat.exe
+D:\project\c#\nonstat\nonstat\bin\Debug\nonstat.pdb
+D:\project\c#\nonstat\nonstat\obj\Debug\nonstat.exe
+D:\project\c#\nonstat\nonstat\obj\Debug\nonstat.pdb

@@ -1,0 +1,7 @@
+D:\project\c#\link\link\bin\Debug\link.exe.config
+D:\project\c#\link\link\bin\Debug\link.exe
+D:\project\c#\link\link\bin\Debug\link.pdb
+D:\project\c#\link\link\obj\Debug\link.csprojResolveAssemblyReference.cache
+D:\project\c#\link\link\obj\Debug\link.csproj.CoreCompileInputs.cache
+D:\project\c#\link\link\obj\Debug\link.exe
+D:\project\c#\link\link\obj\Debug\link.pdb

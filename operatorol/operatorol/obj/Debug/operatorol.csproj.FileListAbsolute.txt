@@ -1,0 +1,7 @@
+D:\project\c#\operatorol\operatorol\bin\Debug\operatorol.exe.config
+D:\project\c#\operatorol\operatorol\bin\Debug\operatorol.exe
+D:\project\c#\operatorol\operatorol\bin\Debug\operatorol.pdb
+D:\project\c#\operatorol\operatorol\obj\Debug\operatorol.csprojResolveAssemblyReference.cache
+D:\project\c#\operatorol\operatorol\obj\Debug\operatorol.csproj.CoreCompileInputs.cache
+D:\project\c#\operatorol\operatorol\obj\Debug\operatorol.exe
+D:\project\c#\operatorol\operatorol\obj\Debug\operatorol.pdb

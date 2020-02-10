@@ -1,0 +1,7 @@
+D:\project\c#\dele\dele\bin\Debug\dele.exe.config
+D:\project\c#\dele\dele\bin\Debug\dele.exe
+D:\project\c#\dele\dele\bin\Debug\dele.pdb
+D:\project\c#\dele\dele\obj\Debug\dele.csprojResolveAssemblyReference.cache
+D:\project\c#\dele\dele\obj\Debug\dele.csproj.CoreCompileInputs.cache
+D:\project\c#\dele\dele\obj\Debug\dele.exe
+D:\project\c#\dele\dele\obj\Debug\dele.pdb

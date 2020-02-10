@@ -1,0 +1,7 @@
+D:\project\c#\gree\gree\bin\Debug\gree.exe.config
+D:\project\c#\gree\gree\bin\Debug\gree.exe
+D:\project\c#\gree\gree\bin\Debug\gree.pdb
+D:\project\c#\gree\gree\obj\Debug\gree.csproj.CoreCompileInputs.cache
+D:\project\c#\gree\gree\obj\Debug\gree.exe
+D:\project\c#\gree\gree\obj\Debug\gree.pdb
+D:\project\c#\gree\gree\obj\Debug\gree.csprojResolveAssemblyReference.cache

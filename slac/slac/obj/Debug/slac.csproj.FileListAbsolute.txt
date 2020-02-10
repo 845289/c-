@@ -1,0 +1,6 @@
+D:\project\c#\slac\slac\bin\Debug\slac.exe.config
+D:\project\c#\slac\slac\bin\Debug\slac.exe
+D:\project\c#\slac\slac\bin\Debug\slac.pdb
+D:\project\c#\slac\slac\obj\Debug\slac.csproj.CoreCompileInputs.cache
+D:\project\c#\slac\slac\obj\Debug\slac.exe
+D:\project\c#\slac\slac\obj\Debug\slac.pdb

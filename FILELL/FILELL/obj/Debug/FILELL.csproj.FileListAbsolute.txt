@@ -1,0 +1,7 @@
+D:\project\c#\FILELL\FILELL\obj\Debug\FILELL.csprojResolveAssemblyReference.cache
+D:\project\c#\FILELL\FILELL\obj\Debug\FILELL.csproj.CoreCompileInputs.cache
+D:\project\c#\FILELL\FILELL\bin\Debug\FILELL.exe.config
+D:\project\c#\FILELL\FILELL\bin\Debug\FILELL.exe
+D:\project\c#\FILELL\FILELL\bin\Debug\FILELL.pdb
+D:\project\c#\FILELL\FILELL\obj\Debug\FILELL.exe
+D:\project\c#\FILELL\FILELL\obj\Debug\FILELL.pdb

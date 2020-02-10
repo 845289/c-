@@ -1,0 +1,5 @@
+D:\project\c#\PatternPrint\PatternPrint\bin\Debug\PatternPrint.dll
+D:\project\c#\PatternPrint\PatternPrint\bin\Debug\PatternPrint.pdb
+D:\project\c#\PatternPrint\PatternPrint\obj\Debug\PatternPrint.csproj.CoreCompileInputs.cache
+D:\project\c#\PatternPrint\PatternPrint\obj\Debug\PatternPrint.dll
+D:\project\c#\PatternPrint\PatternPrint\obj\Debug\PatternPrint.pdb

@@ -1,0 +1,6 @@
+D:\project\c#\lair\lair\bin\Debug\lair.exe.config
+D:\project\c#\lair\lair\bin\Debug\lair.exe
+D:\project\c#\lair\lair\bin\Debug\lair.pdb
+D:\project\c#\lair\lair\obj\Debug\lair.csproj.CoreCompileInputs.cache
+D:\project\c#\lair\lair\obj\Debug\lair.exe
+D:\project\c#\lair\lair\obj\Debug\lair.pdb

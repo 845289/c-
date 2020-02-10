@@ -1,0 +1,7 @@
+D:\project\c#\conn\conn\bin\Debug\conn.exe.config
+D:\project\c#\conn\conn\bin\Debug\conn.exe
+D:\project\c#\conn\conn\bin\Debug\conn.pdb
+D:\project\c#\conn\conn\obj\Debug\conn.csprojResolveAssemblyReference.cache
+D:\project\c#\conn\conn\obj\Debug\conn.csproj.CoreCompileInputs.cache
+D:\project\c#\conn\conn\obj\Debug\conn.exe
+D:\project\c#\conn\conn\obj\Debug\conn.pdb

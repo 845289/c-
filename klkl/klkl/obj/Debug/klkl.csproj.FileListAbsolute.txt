@@ -1,0 +1,7 @@
+D:\project\c#\klkl\klkl\bin\Debug\klkl.exe.config
+D:\project\c#\klkl\klkl\bin\Debug\klkl.exe
+D:\project\c#\klkl\klkl\bin\Debug\klkl.pdb
+D:\project\c#\klkl\klkl\obj\Debug\klkl.csprojResolveAssemblyReference.cache
+D:\project\c#\klkl\klkl\obj\Debug\klkl.csproj.CoreCompileInputs.cache
+D:\project\c#\klkl\klkl\obj\Debug\klkl.exe
+D:\project\c#\klkl\klkl\obj\Debug\klkl.pdb

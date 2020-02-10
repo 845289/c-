@@ -1,0 +1,7 @@
+D:\project\c#\Delegate_type\Delegate_type\bin\Debug\Delegate_type.exe.config
+D:\project\c#\Delegate_type\Delegate_type\bin\Debug\Delegate_type.exe
+D:\project\c#\Delegate_type\Delegate_type\bin\Debug\Delegate_type.pdb
+D:\project\c#\Delegate_type\Delegate_type\obj\Debug\Delegate_type.csprojResolveAssemblyReference.cache
+D:\project\c#\Delegate_type\Delegate_type\obj\Debug\Delegate_type.csproj.CoreCompileInputs.cache
+D:\project\c#\Delegate_type\Delegate_type\obj\Debug\Delegate_type.exe
+D:\project\c#\Delegate_type\Delegate_type\obj\Debug\Delegate_type.pdb

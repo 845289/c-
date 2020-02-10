@@ -1,0 +1,6 @@
+D:\project\c#\weekdays\weekdays\bin\Debug\weekdays.exe.config
+D:\project\c#\weekdays\weekdays\bin\Debug\weekdays.exe
+D:\project\c#\weekdays\weekdays\bin\Debug\weekdays.pdb
+D:\project\c#\weekdays\weekdays\obj\Debug\weekdays.csproj.CoreCompileInputs.cache
+D:\project\c#\weekdays\weekdays\obj\Debug\weekdays.exe
+D:\project\c#\weekdays\weekdays\obj\Debug\weekdays.pdb

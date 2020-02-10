@@ -1,0 +1,7 @@
+D:\project\c#\oopdem\oopdem\bin\Debug\oopdem.exe.config
+D:\project\c#\oopdem\oopdem\bin\Debug\oopdem.exe
+D:\project\c#\oopdem\oopdem\bin\Debug\oopdem.pdb
+D:\project\c#\oopdem\oopdem\obj\Debug\oopdem.csprojResolveAssemblyReference.cache
+D:\project\c#\oopdem\oopdem\obj\Debug\oopdem.csproj.CoreCompileInputs.cache
+D:\project\c#\oopdem\oopdem\obj\Debug\oopdem.exe
+D:\project\c#\oopdem\oopdem\obj\Debug\oopdem.pdb

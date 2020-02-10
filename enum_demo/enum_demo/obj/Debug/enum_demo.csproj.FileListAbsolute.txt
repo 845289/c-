@@ -1,0 +1,7 @@
+D:\project\c#\enum_demo\enum_demo\obj\Debug\enum_demo.csprojResolveAssemblyReference.cache
+D:\project\c#\enum_demo\enum_demo\obj\Debug\enum_demo.csproj.CoreCompileInputs.cache
+D:\project\c#\enum_demo\enum_demo\bin\Debug\enum_demo.exe.config
+D:\project\c#\enum_demo\enum_demo\bin\Debug\enum_demo.exe
+D:\project\c#\enum_demo\enum_demo\bin\Debug\enum_demo.pdb
+D:\project\c#\enum_demo\enum_demo\obj\Debug\enum_demo.exe
+D:\project\c#\enum_demo\enum_demo\obj\Debug\enum_demo.pdb

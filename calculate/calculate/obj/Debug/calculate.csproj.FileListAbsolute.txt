@@ -1,0 +1,7 @@
+D:\project\c#\calculate\calculate\bin\Debug\calculate.exe.config
+D:\project\c#\calculate\calculate\bin\Debug\calculate.exe
+D:\project\c#\calculate\calculate\bin\Debug\calculate.pdb
+D:\project\c#\calculate\calculate\obj\Debug\calculate.csprojResolveAssemblyReference.cache
+D:\project\c#\calculate\calculate\obj\Debug\calculate.csproj.CoreCompileInputs.cache
+D:\project\c#\calculate\calculate\obj\Debug\calculate.exe
+D:\project\c#\calculate\calculate\obj\Debug\calculate.pdb

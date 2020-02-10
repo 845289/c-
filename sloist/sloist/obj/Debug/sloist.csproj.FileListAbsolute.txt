@@ -1,0 +1,6 @@
+D:\project\c#\sloist\sloist\bin\Debug\sloist.exe.config
+D:\project\c#\sloist\sloist\bin\Debug\sloist.exe
+D:\project\c#\sloist\sloist\bin\Debug\sloist.pdb
+D:\project\c#\sloist\sloist\obj\Debug\sloist.csproj.CoreCompileInputs.cache
+D:\project\c#\sloist\sloist\obj\Debug\sloist.exe
+D:\project\c#\sloist\sloist\obj\Debug\sloist.pdb

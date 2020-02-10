@@ -1,0 +1,7 @@
+D:\project\c#\thu23\thu23\bin\Debug\thu23.exe.config
+D:\project\c#\thu23\thu23\bin\Debug\thu23.exe
+D:\project\c#\thu23\thu23\bin\Debug\thu23.pdb
+D:\project\c#\thu23\thu23\obj\Debug\thu23.csprojResolveAssemblyReference.cache
+D:\project\c#\thu23\thu23\obj\Debug\thu23.csproj.CoreCompileInputs.cache
+D:\project\c#\thu23\thu23\obj\Debug\thu23.exe
+D:\project\c#\thu23\thu23\obj\Debug\thu23.pdb

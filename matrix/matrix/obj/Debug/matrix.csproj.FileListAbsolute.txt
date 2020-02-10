@@ -1,0 +1,6 @@
+D:\project\c#\matrix\matrix\bin\Debug\matrix.exe.config
+D:\project\c#\matrix\matrix\bin\Debug\matrix.exe
+D:\project\c#\matrix\matrix\bin\Debug\matrix.pdb
+D:\project\c#\matrix\matrix\obj\Debug\matrix.csproj.CoreCompileInputs.cache
+D:\project\c#\matrix\matrix\obj\Debug\matrix.exe
+D:\project\c#\matrix\matrix\obj\Debug\matrix.pdb

@@ -1,0 +1,7 @@
+D:\project\c#\emplo\emplo\bin\Debug\emplo.exe.config
+D:\project\c#\emplo\emplo\bin\Debug\emplo.exe
+D:\project\c#\emplo\emplo\bin\Debug\emplo.pdb
+D:\project\c#\emplo\emplo\obj\Debug\emplo.csprojResolveAssemblyReference.cache
+D:\project\c#\emplo\emplo\obj\Debug\emplo.csproj.CoreCompileInputs.cache
+D:\project\c#\emplo\emplo\obj\Debug\emplo.exe
+D:\project\c#\emplo\emplo\obj\Debug\emplo.pdb

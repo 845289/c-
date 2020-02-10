@@ -1,0 +1,6 @@
+D:\project\c#\while_loop\while_loop\bin\Debug\while_loop.exe.config
+D:\project\c#\while_loop\while_loop\bin\Debug\while_loop.exe
+D:\project\c#\while_loop\while_loop\bin\Debug\while_loop.pdb
+D:\project\c#\while_loop\while_loop\obj\Debug\while_loop.csproj.CoreCompileInputs.cache
+D:\project\c#\while_loop\while_loop\obj\Debug\while_loop.exe
+D:\project\c#\while_loop\while_loop\obj\Debug\while_loop.pdb

@@ -1,0 +1,7 @@
+D:\project\c#\indexer1\indexer1\obj\Debug\indexer1.csprojResolveAssemblyReference.cache
+D:\project\c#\indexer1\indexer1\obj\Debug\indexer1.csproj.CoreCompileInputs.cache
+D:\project\c#\indexer1\indexer1\bin\Debug\indexer1.exe.config
+D:\project\c#\indexer1\indexer1\bin\Debug\indexer1.exe
+D:\project\c#\indexer1\indexer1\bin\Debug\indexer1.pdb
+D:\project\c#\indexer1\indexer1\obj\Debug\indexer1.exe
+D:\project\c#\indexer1\indexer1\obj\Debug\indexer1.pdb

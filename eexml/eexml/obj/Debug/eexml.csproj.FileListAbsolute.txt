@@ -1,0 +1,7 @@
+D:\project\c#\eexml\eexml\bin\Debug\eexml.exe.config
+D:\project\c#\eexml\eexml\bin\Debug\eexml.exe
+D:\project\c#\eexml\eexml\bin\Debug\eexml.pdb
+D:\project\c#\eexml\eexml\obj\Debug\eexml.csprojResolveAssemblyReference.cache
+D:\project\c#\eexml\eexml\obj\Debug\eexml.csproj.CoreCompileInputs.cache
+D:\project\c#\eexml\eexml\obj\Debug\eexml.exe
+D:\project\c#\eexml\eexml\obj\Debug\eexml.pdb

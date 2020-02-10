@@ -1,0 +1,6 @@
+D:\project\c#\SAT2\SAT2\bin\Debug\SAT2.exe.config
+D:\project\c#\SAT2\SAT2\bin\Debug\SAT2.exe
+D:\project\c#\SAT2\SAT2\bin\Debug\SAT2.pdb
+D:\project\c#\SAT2\SAT2\obj\Debug\SAT2.csproj.CoreCompileInputs.cache
+D:\project\c#\SAT2\SAT2\obj\Debug\SAT2.exe
+D:\project\c#\SAT2\SAT2\obj\Debug\SAT2.pdb
