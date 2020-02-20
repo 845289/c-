@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Exammod.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ExammodStoreContainer">
+    <EntitySet Name="Schools" EntityType="Exammod.Store.Schools" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Exams" EntityType="Exammod.Store.Exams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invigilators" EntityType="Exammod.Store.Invigilators" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Courses" EntityType="Exammod.Store.Courses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subjects" EntityType="Exammod.Store.Subjects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Students" EntityType="Exammod.Store.Students" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="SchoolExam" Association="Exammod.Store.SchoolExam">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="Exam" EntitySet="Exams" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolInvigilator" Association="Exammod.Store.SchoolInvigilator">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="Invigilator" EntitySet="Invigilators" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolCourse" Association="Exammod.Store.SchoolCourse">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="CourseSubject" Association="Exammod.Store.CourseSubject">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Subject" EntitySet="Subjects" />
+    </AssociationSet>
+    <AssociationSet Name="CourseStudent" Association="Exammod.Store.CourseStudent">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolStudent" Association="Exammod.Store.SchoolStudent">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Schools">
+    <Key>
+      <PropertyRef Name="Sid" />
+    </Key>
+    <Property Name="Sid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Slocation" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Exams">
+    <Key>
+      <PropertyRef Name="Eid" />
+    </Key>
+    <Property Name="Eid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SchoolSid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Invigilators">
+    <Key>
+      <PropertyRef Name="Iid" />
+    </Key>
+    <Property Name="Iid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Iname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SchoolSid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Courses">
+    <Key>
+      <PropertyRef Name="Cid" />
+    </Key>
+    <Property Name="Cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SchoolSid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Subjects">
+    <Key>
+      <PropertyRef Name="Suid" />
+    </Key>
+    <Property Name="Suid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Suname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CourseCid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="Stid" />
+    </Key>
+    <Property Name="Stid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CourseCid" Type="int" Nullable="false" />
+    <Property Name="SchoolSid" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="SchoolExam">
+    <End Role="School" Type="Exammod.Store.Schools" Multiplicity="1" />
+    <End Role="Exam" Type="Exammod.Store.Exams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Sid" />
+      </Principal>
+      <Dependent Role="Exam">
+        <PropertyRef Name="SchoolSid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolInvigilator">
+    <End Role="School" Type="Exammod.Store.Schools" Multiplicity="1" />
+    <End Role="Invigilator" Type="Exammod.Store.Invigilators" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Sid" />
+      </Principal>
+      <Dependent Role="Invigilator">
+        <PropertyRef Name="SchoolSid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolCourse">
+    <End Role="School" Type="Exammod.Store.Schools" Multiplicity="1" />
+    <End Role="Course" Type="Exammod.Store.Courses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Sid" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="SchoolSid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CourseSubject">
+    <End Role="Course" Type="Exammod.Store.Courses" Multiplicity="1" />
+    <End Role="Subject" Type="Exammod.Store.Subjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="Cid" />
+      </Principal>
+      <Dependent Role="Subject">
+        <PropertyRef Name="CourseCid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CourseStudent">
+    <End Role="Course" Type="Exammod.Store.Courses" Multiplicity="1" />
+    <End Role="Student" Type="Exammod.Store.Students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="Cid" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="CourseCid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolStudent">
+    <End Role="School" Type="Exammod.Store.Schools" Multiplicity="1" />
+    <End Role="Student" Type="Exammod.Store.Students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Sid" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="SchoolSid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Exammod" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ExammodContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Schools" EntityType="Exammod.School" />
+          <EntitySet Name="Exams" EntityType="Exammod.Exam" />
+          <AssociationSet Name="SchoolExam" Association="Exammod.SchoolExam">
+            <End Role="School" EntitySet="Schools" />
+            <End Role="Exam" EntitySet="Exams" />
+          </AssociationSet>
+          <EntitySet Name="Invigilators" EntityType="Exammod.Invigilator" />
+          <AssociationSet Name="SchoolInvigilator" Association="Exammod.SchoolInvigilator">
+            <End Role="School" EntitySet="Schools" />
+            <End Role="Invigilator" EntitySet="Invigilators" />
+          </AssociationSet>
+          <EntitySet Name="Courses" EntityType="Exammod.Course" />
+          <AssociationSet Name="SchoolCourse" Association="Exammod.SchoolCourse">
+            <End Role="School" EntitySet="Schools" />
+            <End Role="Course" EntitySet="Courses" />
+          </AssociationSet>
+          <EntitySet Name="Subjects" EntityType="Exammod.Subject" />
+          <AssociationSet Name="CourseSubject" Association="Exammod.CourseSubject">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="Subject" EntitySet="Subjects" />
+          </AssociationSet>
+          <EntitySet Name="Students" EntityType="Exammod.Student" />
+          <AssociationSet Name="CourseStudent" Association="Exammod.CourseStudent">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="Student" EntitySet="Students" />
+          </AssociationSet>
+          <AssociationSet Name="SchoolStudent" Association="Exammod.SchoolStudent">
+            <End Role="School" EntitySet="Schools" />
+            <End Role="Student" EntitySet="Students" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="School">
+          <Key>
+            <PropertyRef Name="Sid" />
+          </Key>
+          <Property Name="Sid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sname" Type="String" Nullable="false" />
+          <Property Name="Slocation" Type="String" Nullable="false" />
+          <NavigationProperty Name="Exams" Relationship="Exammod.SchoolExam" FromRole="School" ToRole="Exam" />
+          <NavigationProperty Name="Invigilators" Relationship="Exammod.SchoolInvigilator" FromRole="School" ToRole="Invigilator" />
+          <NavigationProperty Name="Courses" Relationship="Exammod.SchoolCourse" FromRole="School" ToRole="Course" />
+          <NavigationProperty Name="Students" Relationship="Exammod.SchoolStudent" FromRole="School" ToRole="Student" />
+        </EntityType>
+        <EntityType Name="Exam">
+          <Key>
+            <PropertyRef Name="Eid" />
+          </Key>
+          <Property Name="Eid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="School" Relationship="Exammod.SchoolExam" FromRole="Exam" ToRole="School" />
+          <Property Name="SchoolSid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="SchoolExam">
+          <End Type="Exammod.School" Role="School" Multiplicity="1" />
+          <End Type="Exammod.Exam" Role="Exam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="School">
+              <PropertyRef Name="Sid" />
+            </Principal>
+            <Dependent Role="Exam">
+              <PropertyRef Name="SchoolSid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Invigilator">
+          <Key>
+            <PropertyRef Name="Iid" />
+          </Key>
+          <Property Name="Iid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Iname" Type="String" Nullable="false" />
+          <NavigationProperty Name="School" Relationship="Exammod.SchoolInvigilator" FromRole="Invigilator" ToRole="School" />
+          <Property Name="SchoolSid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="SchoolInvigilator">
+          <End Type="Exammod.School" Role="School" Multiplicity="1" />
+          <End Type="Exammod.Invigilator" Role="Invigilator" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="School">
+              <PropertyRef Name="Sid" />
+            </Principal>
+            <Dependent Role="Invigilator">
+              <PropertyRef Name="SchoolSid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cname" Type="String" Nullable="false" />
+          <NavigationProperty Name="School" Relationship="Exammod.SchoolCourse" FromRole="Course" ToRole="School" />
+          <Property Name="SchoolSid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Subjects" Relationship="Exammod.CourseSubject" FromRole="Course" ToRole="Subject" />
+          <NavigationProperty Name="Students" Relationship="Exammod.CourseStudent" FromRole="Course" ToRole="Student" />
+        </EntityType>
+        <Association Name="SchoolCourse">
+          <End Type="Exammod.School" Role="School" Multiplicity="1" />
+          <End Type="Exammod.Course" Role="Course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="School">
+              <PropertyRef Name="Sid" />
+            </Principal>
+            <Dependent Role="Course">
+              <PropertyRef Name="SchoolSid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Suid" />
+          </Key>
+          <Property Name="Suid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Suname" Type="String" Nullable="false" />
+          <NavigationProperty Name="Course" Relationship="Exammod.CourseSubject" FromRole="Subject" ToRole="Course" />
+          <Property Name="CourseCid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="CourseSubject">
+          <End Type="Exammod.Course" Role="Course" Multiplicity="1" />
+          <End Type="Exammod.Subject" Role="Subject" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="Subject">
+              <PropertyRef Name="CourseCid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Stid" />
+          </Key>
+          <Property Name="Stid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Stname" Type="String" Nullable="false" />
+          <NavigationProperty Name="Course" Relationship="Exammod.CourseStudent" FromRole="Student" ToRole="Course" />
+          <Property Name="CourseCid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="School" Relationship="Exammod.SchoolStudent" FromRole="Student" ToRole="School" />
+          <Property Name="SchoolSid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="CourseStudent">
+          <End Type="Exammod.Course" Role="Course" Multiplicity="1" />
+          <End Type="Exammod.Student" Role="Student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="CourseCid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SchoolStudent">
+          <End Type="Exammod.School" Role="School" Multiplicity="1" />
+          <End Type="Exammod.Student" Role="Student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="School">
+              <PropertyRef Name="Sid" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="SchoolSid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExammodStoreContainer" CdmEntityContainer="ExammodContainer">
+    <EntitySetMapping Name="Schools">
+      <EntityTypeMapping TypeName="IsTypeOf(Exammod.School)">
+        <MappingFragment StoreEntitySet="Schools">
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Sname" ColumnName="Sname" />
+          <ScalarProperty Name="Slocation" ColumnName="Slocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exams">
+      <EntityTypeMapping TypeName="IsTypeOf(Exammod.Exam)">
+        <MappingFragment StoreEntitySet="Exams">
+          <ScalarProperty Name="Eid" ColumnName="Eid" />
+          <ScalarProperty Name="SchoolSid" ColumnName="SchoolSid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invigilators">
+      <EntityTypeMapping TypeName="IsTypeOf(Exammod.Invigilator)">
+        <MappingFragment StoreEntitySet="Invigilators">
+          <ScalarProperty Name="Iid" ColumnName="Iid" />
+          <ScalarProperty Name="Iname" ColumnName="Iname" />
+          <ScalarProperty Name="SchoolSid" ColumnName="SchoolSid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="IsTypeOf(Exammod.Course)">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="Cid" ColumnName="Cid" />
+          <ScalarProperty Name="Cname" ColumnName="Cname" />
+          <ScalarProperty Name="SchoolSid" ColumnName="SchoolSid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="IsTypeOf(Exammod.Subject)">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="Suid" ColumnName="Suid" />
+          <ScalarProperty Name="Suname" ColumnName="Suname" />
+          <ScalarProperty Name="CourseCid" ColumnName="CourseCid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="IsTypeOf(Exammod.Student)">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="Stid" ColumnName="Stid" />
+          <ScalarProperty Name="Stname" ColumnName="Stname" />
+          <ScalarProperty Name="CourseCid" ColumnName="CourseCid" />
+          <ScalarProperty Name="SchoolSid" ColumnName="SchoolSid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
