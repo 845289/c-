@@ -79,7 +79,7 @@ D:\project\c#\WebApplication5\WebApplication5\bin\Microsoft.AI.DependencyCollect
 D:\project\c#\WebApplication5\WebApplication5\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\project\c#\WebApplication5\WebApplication5\bin\Microsoft.AI.WindowsServer.xml
 D:\project\c#\WebApplication5\WebApplication5\bin\Microsoft.AI.Web.xml
-D:\project\c#\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojResolveAssemblyReference.cache
-D:\project\c#\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CoreCompileInputs.cache
 D:\project\c#\WebApplication5\WebApplication5\obj\Debug\WebApplication5.dll
 D:\project\c#\WebApplication5\WebApplication5\obj\Debug\WebApplication5.pdb
+D:\project\c#\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csprojAssemblyReference.cache
+D:\project\c#\WebApplication5\WebApplication5\obj\Debug\WebApplication5.csproj.CopyComplete

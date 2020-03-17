@@ -1,0 +1,79 @@
+﻿@model core_basic.Models.BookCategory
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-controller="Books" asp-action="Index" method="get">
+    <p>
+        <select asp-for="Bookcategory" asp-items="Model.Categories">
+            <option value="">All</option>
+        </select>
+        <select asp-for="Publishersear" asp-items="Model.publisher">
+            <option value="">All</option>
+        </select>
+        Title:<input type="text" name="searchstr" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Books[0].Btitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Books[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Books[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Books[0].AuthorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Books[0].Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Books[0].Releasedate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Books)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Btitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AuthorName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Publisher)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Releasedate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Bid">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Bid">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Bid">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

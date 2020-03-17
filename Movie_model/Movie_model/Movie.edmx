@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Movie.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MovieStoreContainer">
+    <EntitySet Name="Movies" EntityType="Movie.Store.Movies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Theatres" EntityType="Movie.Store.Theatres" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="MovieTheatre" Association="Movie.Store.MovieTheatre">
+      <End Role="Movie" EntitySet="Movies" />
+      <End Role="Theatre" EntitySet="Theatres" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Movies">
+    <Key>
+      <PropertyRef Name="MId" />
+    </Key>
+    <Property Name="MId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Theatres">
+    <Key>
+      <PropertyRef Name="TId" />
+    </Key>
+    <Property Name="TId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Tlocation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MovieMId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="MovieTheatre">
+    <End Role="Movie" Type="Movie.Store.Movies" Multiplicity="1" />
+    <End Role="Theatre" Type="Movie.Store.Theatres" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movie">
+        <PropertyRef Name="MId" />
+      </Principal>
+      <Dependent Role="Theatre">
+        <PropertyRef Name="MovieMId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Movie" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MovieContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Movies" EntityType="Movie.Movie" />
+          <EntitySet Name="Theatres" EntityType="Movie.Theatre" />
+          <AssociationSet Name="MovieTheatre" Association="Movie.MovieTheatre">
+            <End Role="Movie" EntitySet="Movies" />
+            <End Role="Theatre" EntitySet="Theatres" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Movie">
+          <Key>
+            <PropertyRef Name="MId" />
+          </Key>
+          <Property Name="MId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mname" Type="String" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Theatres" Relationship="Movie.MovieTheatre" FromRole="Movie" ToRole="Theatre" />
+        </EntityType>
+        <EntityType Name="Theatre">
+          <Key>
+            <PropertyRef Name="TId" />
+          </Key>
+          <Property Name="TId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tname" Type="String" Nullable="false" />
+          <Property Name="Tlocation" Type="String" Nullable="false" />
+          <NavigationProperty Name="Movie" Relationship="Movie.MovieTheatre" FromRole="Theatre" ToRole="Movie" />
+          <Property Name="MovieMId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="MovieTheatre">
+          <End Type="Movie.Movie" Role="Movie" Multiplicity="1" />
+          <End Type="Movie.Theatre" Role="Theatre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Movie">
+              <PropertyRef Name="MId" />
+            </Principal>
+            <Dependent Role="Theatre">
+              <PropertyRef Name="MovieMId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MovieStoreContainer" CdmEntityContainer="MovieContainer">
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="IsTypeOf(Movie.Movie)">
+        <MappingFragment StoreEntitySet="Movies">
+          <ScalarProperty Name="MId" ColumnName="MId" />
+          <ScalarProperty Name="Mname" ColumnName="Mname" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Theatres">
+      <EntityTypeMapping TypeName="IsTypeOf(Movie.Theatre)">
+        <MappingFragment StoreEntitySet="Theatres">
+          <ScalarProperty Name="TId" ColumnName="TId" />
+          <ScalarProperty Name="Tname" ColumnName="Tname" />
+          <ScalarProperty Name="Tlocation" ColumnName="Tlocation" />
+          <ScalarProperty Name="MovieMId" ColumnName="MovieMId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,23 @@
+﻿
+@model Vendue.Entities.Auction
+<h2>Edit Auction</h2>
+<form method="post">
+    <input type="hidden" value="@Model.ID"/>
+    <label>Title</label>
+    <input name="Title" value="@Model.Title" />
+    <br />
+    <label>Description</label>
+    <input name="Description" value="@Model.Description" />
+    <br />
+    <label>ActualAmount</label>
+    <input name="ActualAmount" value="@Model.ActualAmount" />
+    <br />
+    <label>Starting Time</label>
+    <input name="StartingTime" value="@Model.StartingTime" />
+    <br />
+    <label>Ending Time</label>
+    <input name="EndTime" value="@Model.EndTime" />
+    <br />
+    <button>Save</button>
+</form>
+

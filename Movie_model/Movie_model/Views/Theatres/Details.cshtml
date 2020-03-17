@@ -1,0 +1,42 @@
+﻿@model Movie_model.Theatre
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Theatre</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tlocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tlocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Movie.Mname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movie.Mname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,44 @@
+﻿@model  List<Vendue.Entities.Auction>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Actual Amount
+            </th>
+            <th>
+                Starting Time
+            </th>
+            <th>
+                Ending Time
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var auction in Model)
+        {
+        <tr>
+            <th>
+                @auction.Title
+            </th>
+            <th>
+                @auction.Description
+            </th>
+            <th>
+                @auction.ActualAmount
+            </th>
+            <th>
+                @auction.StartingTime
+            </th>
+            <th>
+                @auction.EndTime
+            </th>
+        </tr>
+        }
+    </tbody>
+</table>
